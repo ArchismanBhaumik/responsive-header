@@ -41,3 +41,99 @@ font-size:3vw ;
         
     }
   }
+
+  .introduction {
+    display: flex; /* Flexbox for side-by-side layout */
+    align-items: stretch; /* Ensures both items stretch to equal height */
+    gap: 20px; /* Adds space between image and text */
+    height: 300px; /* Define a uniform height for both image and text */
+    padding: 20px;
+    margin-top: 80vh; 
+    color: #ffff; /* Optional: Text color */
+
+}
+
+.introduction img {
+    width: 30%; /* Image takes 30% of the container width */
+    height: 100%; /* Ensures the image matches the container height */
+    object-fit: cover; /* Scales image to fill its container */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.text-container {
+    flex: 1; /* Text takes remaining space */
+    height: 100%; /* Ensures text container matches image height */
+    display: flex; /* Use flexbox for vertical alignment */
+    justify-content: center; /* Center-align text vertically */
+    align-items: center; /* Center-align text horizontally */
+    
+}
+
+.text-container p {
+    margin: 0; /* Removes default margin */
+    font-size: 1rem; /* Adjusts font size */
+    line-height: 1.5; /* Improves readability */
+}
+@media (max-width: 768px) {
+    .introduction {
+        flex-direction: column; /* Stack image and text vertically */
+        height: auto; /* Allow height to adjust */
+    }
+    .introduction img {
+        width: 100%; /* Image takes full width */
+        height: 200px; /* Fixed height for smaller screens */
+    }
+    .text-container {
+        height: auto; /* Allow text container to adjust height */
+        padding-top: 10px;
+    }
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better appearance */
+}
+
+.tech-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Card shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Hover effect */
+    background-color: #485460;
+}
+
+.tech-card img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-bottom: 10px;
+    object-fit: contain; /* Ensures images maintain aspect ratio */
+}
+
+.tech-card p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffff;
+}
+.margin-div{
+    margin-top: 50vh; 
+}
+.contact{
+    text-align: center;
+    color: #ffff;
+}
