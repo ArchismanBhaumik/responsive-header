@@ -1,0 +1,43 @@
+*{
+    background-color:#1e272e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+}
+.welcome-header{
+align-items: center;
+width: 100%;
+text-align: center;
+padding-top: 10vh;
+font-size:3vw ;
+}
+.doto-h1 {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 0;
+      background: linear-gradient(to right , #fc72ff ,#8f68ff ,#487bff ,#8f68ff ,#fc72ff);
+      background-size: 200%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      border-right: 5px solid;
+      width: 100%;
+      white-space: nowrap;
+      overflow:hidden;
+      animation: typing 2s infinite, cursor .4s step-end infinite alternate;
+  }
+  @keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+  }
+  @keyframes typing {
+    
+    from{
+        width: 0;
+        
+    }
+  }
